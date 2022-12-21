@@ -36,76 +36,94 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Contact</h1>
-    <h2>Contact gegevens</h2>
-    <ul>
-      <li>E-mail:fineaspop1507@gmail.com</li>
-      <li>Telefoon: +32472953411</li>
-      <li>Facebook: Fineas Pop</li>
-      <li>Instagram: fineaspop</li>
-    </ul>
-    <h2>Stel uw vraag hier:</h2>
-    <form action="https://tm-statweb.be/forms.php" method="POST">
-      <div>
-        <label for="naam"
-          >Naam: <input type="text" id="naam" name="naam" required
-        /></label>
-      </div>
-
-      <div>
-        <label for="email"
-          >Email: <input type="email" id="email" name="email" required
-        /></label>
-      </div>
-
-      <div>
-        <label for="website"
-          >Website: <input type="url" id="website" name="website" required
-        /></label>
-      </div>
-
-      <div>
-        <label for="reactie"
-          >Reactie: <textarea rows="5" id="reactie" name="reactie"></textarea>
-        </label>
-      </div>
-      <div>
-        <fieldset>
-          <legend>Geslacht</legend>
-          <div>
-            <label for="male"
-              >Male <input type="radio" id="male" name="gender" value="male"
-            /></label>
-            <label for="female"
-              >Female<input
-                type="radio"
-                id="female"
-                name="gender"
-                value="female"
-            /></label>
-            <label for="other"
-              >Other <input type="radio" id="other" name="gender" value="other"
-            /></label>
-          </div>
-        </fieldset>
-      </div>
-
-      <div>
-        <label for="opdehoogtehouden"
-          >Hou me op de hoogte:
-          <input
-            type="checkbox"
-            value="yes"
-            id="opdehoogtehouden"
-            name="opdehoogtehouden"
-          />
-        </label>
-      </div>
-
-      <div>
-        <input type="submit" value="Indienen" />
-      </div>
-    </form>
+   <div class="container">
+    <div class="row card">
+        <div class="col-md-12 card-body">
+            <h1>Contact</h1>
+            <h2>Contact gegevens</h2>
+            <ul>
+              <li>E-mail:fineaspop1507@gmail.com</li>
+              <li>Telefoon: +32472953411</li>
+              <li>Facebook: Fineas Pop</li>
+              <li>Instagram: fineaspop</li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  skilzz
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">html</a></li>
+                  <li><a class="dropdown-item" href="#">css</a></li>
+                  <li><a class="dropdown-item" href="#">C#</a></li>
+                  <li><a class="dropdown-item" href="#">SQL</a></li>
+                  <li><a class="dropdown-item" href="#">JS</a></li>
+                </ul>
+              </div>
+            <h2>Stel uw vraag hier:</h2>
+            <form  novalidate action="https://tm-statweb.be/forms.php" method="POST">
+              <div>
+                <label for="naam"
+                  >Naam: <input type="text" id="naam" name="naam" required
+                /></label>
+              </div>
+        
+              <div>
+                <label for="email"
+                  >Email: <input type="email" id="email" name="email" required
+                /></label>
+              </div>
+        
+              <div>
+                <label for="website"
+                  >Website: <input type="url" id="website" name="website" required
+                /></label>
+              </div>
+        
+              <div>
+                <label for="reactie"
+                  >Reactie: <textarea rows="5" id="reactie" name="reactie"></textarea>
+                </label>
+              </div>
+              <div>
+                <fieldset>
+                  <legend>Geslacht</legend>
+                  <div>
+                    <label for="male"
+                      >Male <input type="radio" id="male" name="gender" value="male"
+                    /></label>
+                    <label for="female"
+                      >Female<input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                    /></label>
+                    <label for="other"
+                      >Other <input type="radio" id="other" name="gender" value="other"
+                    /></label>
+                  </div>
+                </fieldset>
+              </div>
+        
+              <div>
+                <label for="opdehoogtehouden"
+                  >Hou me op de hoogte:
+                  <input
+                    type="checkbox"
+                    value="yes"
+                    id="opdehoogtehouden"
+                    name="opdehoogtehouden"
+                  />
+                </label>
+              </div>
+        
+              <div>
+                <input type="submit" value="Indienen" />
+              </div>
+            </form>
+        </div>
+    </div>
+   </div>
 
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
